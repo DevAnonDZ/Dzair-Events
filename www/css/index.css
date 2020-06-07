@@ -1,0 +1,201 @@
+/*
+* -*- mode: text; coding: utf-8; -*-
+
+
+ * This file is part of Indico check-in.
+ * Copyright (C) 2002 - 2013 European Organization for Nuclear Research (CERN).
+ *
+ * Indico is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of the
+ * License, or (at your option) any later version.
+ *
+ * Indico is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Indico check-in; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+body {
+    padding-top: 70px;
+}
+
+.checkin-nav {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+header.checkin-nav {
+    background-color: #0B63A5;
+    height: 46px;
+    color: #ffffff;
+}
+
+header.checkin-nav  > .title {
+    color: #ffffff;
+    font-size: 1.2em;
+    position: absolute;
+    left: 1.6em;
+    right: 1.6em;
+    text-align: center;
+    display: inline-block;
+    line-height: 46px;
+    height: 46px;
+    margin: 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header.checkin-nav  > a {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    float: left;
+    line-height: 46px;
+    min-width: 46px;
+}
+
+header.checkin-nav > a:hover {
+    color: #0E80D8;
+}
+
+footer.checkin-nav {
+    min-height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+    border-top: 1px solid #0E80D8;
+    background-color: #EEE;
+
+}
+
+footer.checkin-nav nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    -o-box-pack: justify;
+    box-pack: justify;
+    width: 100%;
+    font-size: 11px;
+    margin:0;
+}
+
+footer.checkin-nav > nav  a {
+    display: block;
+    padding: 0;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+footer.checkin-nav nav .glyphicon {
+    font-size: 1.8em;
+    display: block;
+    width: inherit;
+}
+
+footer.checkin-nav nav > a {
+    color: #0B63A5;
+}
+
+footer.checkin-nav nav > a:hover {
+    color: #0E80D8;
+}
+
+.blue {
+    color: #0B63A5;
+}
+
+.green {
+    color: #5cb85c;
+}
+
+.bg-blue {
+    background-color: #0B63A5;
+}
+
+.empty-list {
+    font-size: 4em;
+    margin: 20px;
+}
+
+
+/* Override Bootstrap style*/
+
+h3.panel-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4.list-group-item-heading {
+    white-space: pre;
+    word-wrap: break-word;
+}
+
+.badge {
+    font-size: 20px;
+}
+
+div.registrants .checked  {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+
+.toggle-button {
+    -webkit-box-sizing: border-box;
+    border: 1px solid #999;
+    box-shadow: 0 0 5px rgba(100,100,100,0.3) inset;
+    width: 6em;
+    display: block;
+    background: #ddd;
+    height: 2em;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-button .toggle {
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    -webkit-transition: left background-color border-color;
+    -webkit-transition-duration: .25s;
+    width: 50%;
+    height: 100%;
+    background: #aaa;
+    text-align: center;
+    border: 1px solid #888
+}
+
+.toggle-button.toggled .toggle {
+    box-shadow: 0 0 0px rgba(255,255,255,0.8) inset;
+    background-color: #0B63A5;
+    border-color: #0E80D8;
+    left: 3em;
+}
+
+.toggle-button .toggle::before {
+    color: #666;
+    display: inline-block;
+    font-size: 0.9em;
+    content: "NO";
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.toggle-button.toggled .toggle::before {
+    content: "YES";
+    color: #eee !important;
+}
+
